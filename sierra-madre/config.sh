@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 # Stages to process
 init=1
@@ -19,13 +19,22 @@ output=$fault
 process_list=${output}/meshes/surface_*.msh
 showfig=0
 
-# Boundary fitting options
+# Conversion (see tsurfmsh -help for documentation)
+min_elements=10
+
+# Boundary fitting options (see sffbnd -help for documentation)
 degree=2
-boundary_regularization=3.0
+breg=3.0
+est_knots=1
+num_knots=10
 
-# Surface fitting options
-degree_u=2
-degree_v=2
-padding=0.1
-cell_scaling=1.0
-
+# Surface fitting options (see sffsrf -help for documentation)
+deg_u=2
+deg_v=2
+pad=0.1
+est_uv=1
+scale=1.0
+fit=0
+sreg=1e-4
+num_u=10
+num_v=10

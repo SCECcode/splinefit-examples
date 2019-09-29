@@ -3,8 +3,7 @@ project=sierra_madre
 fault1=WTRA-SMFZ-SMDE-Sierra_Madre_Cucamonga_connector-CFM5_m500
 fault2=WTRA-SMFZ-SMDE-Sierra_Madre_fault_low_dip-CFM4_m500
 
-# Gmsh meshing options
-# see: gmsh -help
+# Gmsh meshing options (see: gmsh -help for documentation)
 tol=100.0
 clmin=200.0
 clmax=200.0
@@ -12,7 +11,14 @@ order=2
 algo=meshadapt
 smooth=3
 
-geometry: cucamonga low_dip
+################################################################################
+
+all: download build
+
+download:
+	bash download.sh
+
+build: cucamonga low_dip
 
 cucamonga:
 	sfbuild config.sh $(fault1)
@@ -20,20 +26,20 @@ cucamonga:
 low_dip:
 	sfbuild config.sh $(fault2)
 
-join:
-	rm -f join.txt; touch join.txt
-	ls $(fault1)/iges/*.igs >> join.txt
-	ls $(fault2)/iges/*.igs >> join.txt
+faults:
+	rm -f faults.txt; touch faults.txt
+	ls $(fault1)/iges/*.igs >> faults.txt
+	ls $(fault2)/iges/*.igs >> faults.txt
 
-crop: join
+crop: faults
 	sfbbox meshes/$(fault1).ts meshes/$(fault2).ts \
-      	--min_elements=10 > bbox.txt; 
-	sfgeo join.txt bbox.txt > $(project).geo
-	rm -rf join.txt bbox.txt
+      	-min_elements=10 > bbox.txt; 
+	sfgeo faults.txt bbox.txt > $(project).geo
+	rm -rf faults.txt bbox.txt
 
-geo: join
-	sfgeo join.txt > $(project).geo
-	rm -rf join.txt
+geo: faults
+	sfgeo faults.txt > $(project).geo
+	rm -rf faults.txt
 
 mesh:
 	gmsh $(project).geo -2 \
