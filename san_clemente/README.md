@@ -1,4 +1,4 @@
-# Tutorial Part 1 - The San Clemente fault zone
+# Tutorial 1 - The San Clemente Fault Zone
 
 Welcome to this first part in a tutorial series that will teach you how to
 produce, new mesh high quality meshes for many of the fault systems in the
@@ -194,26 +194,26 @@ Rotating projected boundary by minimizing its bounding box
 Segmenting boundary
  - Wrote:  OCBA-SCFZ-CTLB-San_Clemente_fault_splay-CFM5_m500/pydata/segmentation_0.p
 Fitting BSpline curve to boundary segments
- - Processing curve 1: degree = 2 knots = 19 
-     Residual: 0.0469269 
- - Processing curve 2: degree = 2 knots = 148 
-     Residual: 0.0259573 
- - Processing curve 3: degree = 2 knots = 20 
-     Residual: 0.0446594 
- - Processing curve 4: degree = 2 knots = 147 
-     Residual: 0.0234899 
+ - Processing curve 1: degree = 2 knots = 147 
+     Residual: 271.397 
+ - Processing curve 2: degree = 2 knots = 19 
+     Residual: 153.068 
+ - Processing curve 3: degree = 2 knots = 148 
+     Residual: 376.101 
+ - Processing curve 4: degree = 2 knots = 20 
+     Residual: 145.917 
  - Wrote: OCBA-SCFZ-CTLB-San_Clemente_fault_splay-CFM5_m500/pydata/boundary_fit_0.p
 Fitting BSpline surface
- - Bounding box dimensions: 3 x 5
- - Average distance between points: 0.0520553
- - Scaled distance between points: 0.104111
- - Grid dimensions: 39 x 58
+ - Bounding box dimensions: 86989 x 13005
+ - Average distance between points: 342.65
+ - Scaled distance between points: 685.3
+ - Grid dimensions: 128 x 20
  - Wrote: OCBA-SCFZ-CTLB-San_Clemente_fault_splay-CFM5_m500/pydata/surface_fit_0.p
 Exporting BSpline Surface to IGES
  - Wrote: surface_0.igs
 Done.
 ```
-The output from build sfbuild reveals the step by step process discussed
+The output from build `sfbuild` reveals the step-by-step process discussed
 previously.
 1. The GOCAD file is converted to gmsh
 2. The boundary is extracted

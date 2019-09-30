@@ -1,4 +1,4 @@
-# Ludlow-Cleghorn Lake Fault Zone
+# Tutorial 2 - Ludlow-Cleghorn Lake Fault Zone
 
 In this second part of the tutorial you will discover how to crop meshes at the
 sea-level. If this capability is not of interest to you, you can skip this
