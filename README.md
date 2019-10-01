@@ -36,6 +36,7 @@ instructions by targeting three different fault zones in the CFM. Th
 
 * [Santa Susana Fault](santa_susana/)
 * [San Bernardino Fault Zone](san_bernardino/)
+* [Harper Fault Zone](harper/)
 
 
 ## Contributions Welcome
