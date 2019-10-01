@@ -12,6 +12,12 @@ CAD software programs and mesh generators such as [gmsh](https://gmsh.info)
 *The Santa Susana fault, geometric model generated using splinefit, meshed using
 gmsh at 500 m resolution, and rendered in Paraview.*
 
+## Getting started
+Please follow these [instructions](start.md) to make sure that your environment is properly
+configured.
+
+
+
 
 ## Tutorials
 To begin learning how to use the [splinefit](https://github.com/ooreilly/splinefit) package and external tools, see the
