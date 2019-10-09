@@ -36,6 +36,7 @@ instructions by targeting three different fault zones in the CFM.
 * [San Bernardino Fault Zone](san_bernardino/)
 * [Harper Fault Zone](harper/)
 * [Garlock Fault Zone](garlock/)
+* [Oak Ridge Fault Zone](oak_ridge/)
 
 ## Not yet working examples
 The following examples show faults that are problematic to mesh. The type of
