@@ -1,8 +1,8 @@
 # Examples of Meshed CFM v5.2 Faults
 
 This repository contains examples of geometric models constructed for some of
-the faults in the
-[CFM](https://www.scec.org/research/cfm). The geometric models are constructed using the package
+the faults in the [CFM](https://www.scec.org/research/cfm). The geometric models
+are constructed using the package
 [splinefit](https://github.com/ooreilly/splinefit) and can be imported into most
 CAD software programs and mesh generators such as [gmsh](https://gmsh.info)
 (free and open source). 
@@ -13,16 +13,14 @@ CAD software programs and mesh generators such as [gmsh](https://gmsh.info)
 gmsh at 500 m resolution, and rendered in Paraview.*
 
 ## Getting started
-Please follow these [instructions](start.md) to make sure that your environment is properly
-configured.
-
-
-
+Please follow these [instructions](start.md) to make sure that your environment
+is properly configured.
 
 ## Tutorials
-To begin learning how to use the [splinefit](https://github.com/ooreilly/splinefit) package and external tools, see the
-the following tutorials. These tutorials demonstrate give step by step
-instructions by targeting three different fault zones in the CFM. Th
+To begin learning how to use the
+[splinefit](https://github.com/ooreilly/splinefit) package and external tools,
+see the the following tutorials. These tutorials demonstrate give step by step
+instructions by targeting three different fault zones in the CFM. 
 
 1. [San Clemente Fault Zone](san_clemente/) - an introductory tutorial that covers
    basic usage.
@@ -37,6 +35,8 @@ instructions by targeting three different fault zones in the CFM. Th
 * [Santa Susana Fault](santa_susana/)
 * [San Bernardino Fault Zone](san_bernardino/)
 * [Harper Fault Zone](harper/)
+* [Garlock Fault Zone](garlock/)
+
 
 
 ## Contributions Welcome
