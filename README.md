@@ -36,6 +36,7 @@ instructions by targeting three different fault zones in the CFM.
 * [San Bernardino Fault Zone](san_bernardino/)
 * [Harper Fault Zone](harper/)
 * [Garlock Fault Zone](garlock/)
+* [Garnet Hill Fault](garnet_hill/) (*NOT YET WORKING*)
 
 
 
