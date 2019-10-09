@@ -26,7 +26,7 @@ instructions by targeting three different fault zones in the CFM.
    basic usage.
 2. [Ludlow-Cleghorn Lake Fault Zone](ludlow_cleghorn/) - learn how to
    crop a model so that it does not extend above sea level.
-3. [Sierra Madre Fault Zone](sierra_madre/) - learn how to respect intersecting.
+3. [Sierra Madre Fault Zone](sierra_madre/) - learn how to respect intersecting
    faults and generate conforming meshes.
 
 
@@ -43,6 +43,7 @@ The following examples show faults that are problematic to mesh. The type of
 problems range from geometric intersection to duplicate data.
 * [Garnet Hill Fault](garnet_hill/) (duplicate point cloud data)
 * [Agua Tibia Earthquake Valley Fault Zone](agua_tibia/) (ill-conditioned geometric intersection)
+* [Landers Fault](landers/) (not all surfaces are meshed)
 
 
 
